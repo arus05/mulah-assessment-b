@@ -5,11 +5,11 @@ form.addEventListener("submit", (e) => {
     const formData = new FormData(e.target)
     const queryString = createQueryString(formData)
     const searchParams = new URLSearchParams(queryString)
-    window.location.href = "/register.html?" + searchParams.toString()
+    window.location.href = "/register/?" + searchParams.toString()
 })
 
 function createQueryString(formData) {
-    queryString = "?"
+    let queryString = "?"
     for (const pair of formData.entries()) {
         queryString += `${pair[0]}=${pair[1]}&`
     }

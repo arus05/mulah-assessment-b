@@ -9,14 +9,14 @@ form.addEventListener("submit", (e) => {
     const newSearchParams = new URLSearchParams(queryString)
 
     newSearchParams.forEach((val, key) => {
-        searchParams.append(key, val)
+        searchParams.set(key, val)
     })
     
-    window.location.href = "/result.html?" + searchParams.toString()
+    window.location.href = "/result/?" + searchParams.toString()
 })
 
 function createQueryString(formData) {
-    queryString = "?"
+    let queryString = "?"
     for (const pair of formData.entries()) {
         queryString += `${pair[0]}=${pair[1]}&`
     }

@@ -8,17 +8,17 @@ const month = searchParams.get("month") ?? ""
 const year = searchParams.get("year") ?? ""
 const email = searchParams.get("email") ?? "N/A"
 
-// if (
-//     !countryCode ||
-//     !mobile ||
-//     !username ||
-//     !day ||
-//     !month ||
-//     !year ||
-//     !email
-// ) {
-//     window.location.href = "/index.html"
-// }
+if (
+    !countryCode ||
+    !mobile ||
+    !username ||
+    !day ||
+    !month ||
+    !year ||
+    !email
+) {
+    window.location.href = "/index.html"
+}
 
 const phoneNumber = countryCode + mobile
 const bday = `${day}-${month}-${year}`
