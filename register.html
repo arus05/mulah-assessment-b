@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 2</title>
+    <link rel="stylesheet" href="style/register.css">
+    <script src="/scripts/register.js" async defer></script>
+</head>
+  <body>
+    <div class="container">
+        <div class="card">
+            <header class="header">
+                <h1 class="title">
+                    MULAH
+                </h1>
+            </header>
+            <main class="main">
+                <h2 class="subtitle">
+                    Registration
+                </h2>
+                <p class="main-description">Please fill up your details</p>
+                <form class="form" id="form">
+                    <div class="input-container" id="name-input-container">
+                        <label for="name" class="name-label">Name</label>
+                        <input
+                            type="text" id="name" name="name" class="name-input"
+                            placeholder="Enter Name" required
+                        >
+                        <p class="error">*Please insert a name.</p>
+                    </div>
+
+                    <div class="input-container" id="bday-input-container">
+                        <label for="birthday" class="bday-label">Birthday</label>
+                        <div id="birthday" class="birthday-inputs">
+                            <input
+                                type="text" pattern="[0-9]{1,2}" id="day" name="day"
+                                placeholder="DD" class="day-input" required
+                                maxlength="2"
+                            >
+                            <input
+                                type="text" pattern="[0-9]{1,2}" id="month" name="month"
+                                placeholder="MM" class="month-input" required
+                                maxlength="2"
+                            >
+                            <input
+                                type="text" pattern="[0-9]{4}" id="year" name="year"
+                                placeholder="YYYY" class="year-input" required
+                                maxlength="4"
+                            >
+                        </div>
+                        <p class="error">*Please insert your birthday.</p>
+                    </div>
+                    
+                    <div class="input-container" id="email-input-container">
+                        <label for="email" class="email-label">Email</label>
+                        <input type="email" name="email" placeholder="Email Address" class="email-input" required>
+                        <p class="error">*Please insert a valid email address.</p>
+                    </div>
+                    
+                    <div class="checkbox-container">
+                        <input class="checkbox" type="checkbox" id="noemail" name="noemail" value="noemail">
+                        <label class="checkbox-label" for="noemail">No email?</label>
+                    </div>
+                    
+                    <button class="submit-btn">
+                        Continue
+                    </button>
+                </form>
+            </main>
+
+            <div class="separator"></div>
+
+            <footer class="footer">
+                <p class="footer-text">
+                    Powered by
+                    <a
+                        href="https://mulahrewards.com"
+                        class="footer-link"
+                        target="_blank"
+                    >
+                        MulahRewards.com
+                    </a>
+                </p>
+            </footer>
+        </div>
+    </div>
+  </body>
+</html>

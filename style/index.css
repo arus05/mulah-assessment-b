@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --max-width: 640px;
+    --max-height: 1136px;
+
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Merriweather", serif;
+
+    --clr-orange: #f68209;  
+    --clr-grey: #737373;
+    --clr-lightgrey: #abaaaa;
+}
+
+/* Reset */
+body {
+    margin: 0;
+    font-family: var(--ff-primary);
+}
+
+h1,h2,h3,h4,h5 {
+    margin: 0
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+select {
+    font: inherit;
+    display: block;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Utilities */
+.separator {
+    height: 1px;
+    width: 100%;
+    background-color: lightgrey
+}
+
+/* Class Styles */
+.container {
+    padding: 1.5em;
+    max-width: var(--max-width);
+    margin: auto
+}
+
+.title {
+    margin-block: 2em;
+    color: var(--clr-orange);
+    font-weight: 900;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: var(--ff-secondary);
+    color: var(--clr-grey);
+    font-weight: 500;
+    font-size: 2.25rem;
+    margin-bottom: 1em;
+}
+
+.main-description {
+    color: var(--clr-orange);
+    font-weight: 600;
+    margin-bottom: 3em;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3em;
+    gap: 1em;
+}
+
+.mobile-input-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--clr-orange)
+}
+
+.country-code-input-container select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid var(--clr-orange)
+}
+
+.mobile-input-container {
+    flex-grow: 1;
+}
+
+.mobile-input-container input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
+.check-icon {
+    color: var(--clr-grey)
+}
+
+.submit-btn {
+    background: var(--clr-orange);
+    border-radius: 1.5rem;
+    padding: 0.8rem 1rem;
+    color: white;
+    font-weight: 500;
+    width: 100%;
+}
+
+.footer {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-weight: 500;
+}

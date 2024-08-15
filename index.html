@@ -4,10 +4,56 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
+    <link rel="stylesheet" href="style/index.css">
+    <title>Page 1</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <script src="./scripts/index.js" defer async></script>
+</head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">
+                MULAH
+            </h1>
+        </header>
+        <main class="main">
+            <h2 class="subtitle">
+                Hello,<br>Welcome!
+            </h2>
+            <p class="main-description">Check Your Loyalty Points & Rewards</p>
+            <form class="form" id="form">
+                <div class="input-container">
+                    <div class="country-code-input-container">
+                        <select name="country-code" id="country-code">
+                            <option value="60">+60</option>
+                        </select>
+                    </div>
+                    <div class="mobile-input-container">
+                        <input
+                            type="tel"
+                            pattern="[0-9]{9}"
+                            name="mobile"
+                            placeholder="Enter your mobile number"
+                            maxlength="9"
+                            required
+                        >
+                        <span class="material-symbols-outlined check-icon">
+                            check_circle
+                        </span>
+                    </div>
+                </div>
+                <button class="submit-btn" id="submit-btn">
+                    Check Loyalty Points
+                </button>
+            </form>
+        </main>
+        <div class="separator"></div>
+        <footer class="footer">
+            <p class="footer-text">
+                Powered by
+                <a href="https://mulahrewards.com" target="_blank" class="footer-link">MulahRewards.com</a>
+            </p>
+        </footer>
+    </div>
   </body>
 </html>
